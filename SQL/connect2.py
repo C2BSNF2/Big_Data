@@ -22,7 +22,7 @@ try:
         print(row)
 
 except pymysql.MySQLError as e:
-    print("Error:", e)
+    print("Error!!! Only Collins is authorized:", e)
 
 finally:
     if 'connection' in locals() and connection.open:
